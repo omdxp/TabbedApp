@@ -22,5 +22,18 @@ namespace TabbedApp
         {
             Navigation.PushAsync(new NavigationPage(new TabbedPage1()));
         }
+
+        private async void ShowAlert(object sender, EventArgs e)
+        {
+            var result = await DisplayAlert("Title", "Message", "Accept", "Cancel");
+        }
+
+        private async void ShowActionSheet(object sender, EventArgs e)
+        {
+            var result = await DisplayActionSheet("Title", "Cancel", "Destruction",
+                "param 1",
+                "param 2",
+                "param 3");
+        }
     }
 }

@@ -8,7 +8,15 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Button Text="Go to second page" Clicked="GoTeSecondPage"/>
+        <Button Text="Go to second page" Clicked="GoTeSecondPage"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
+        <Button Text="Show Alert" Clicked="ShowAlert"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+        <Button Text="Show Alert Sheet" Clicked="ShowActionSheet"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
     </StackLayout>
 
 </ContentPage>
